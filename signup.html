@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en-US" manifest="jkAlumni.appcache">
+
+<head>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Alumni Association, JK Institute Of Applied Physics & Technology</title>
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper teal">
+        <a href="index.html" class="brand-logo">Logo</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#"><i class="mdi-action-info left"></i>Info</a></li>
+          <li><a href="#"><i class="mdi-social-group-add left"></i>Reunions</a></li>
+          <li><a href="#"><i class="mdi-image-collections left"></i>Gallery</a></li>
+          <li><a href="#"><i class="mdi-editor-attach-money left"></i>Giving Back</a></li>
+          <li><a href="#"><i class="mdi-communication-quick-contacts-mail left"></i>Contact</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#"><i class="mdi-action-info left"></i>Info</a></li>
+          <li><a href="#"><i class="mdi-social-group-add left"></i>Reunions</a></li>
+          <li><a href="#"><i class="mdi-image-collections left"></i>Gallery</a></li>
+          <li><a href="#"><i class="mdi-editor-attach-money left"></i>Donation</a></li>
+          <li><a href="#"><i class="mdi-communication-quick-contacts-mail left"></i>Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <div class="row">
+    <form class="col s12 z-depth 1" action="#">
+    <header class="center-align">
+    <i class="mdi-communication-quick-contacts-dialer large"></i>
+    <h3>Sign Up</h3>
+    </header>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="mdi-action-account-circle prefix"></i>
+          <input id="firstName" type="text" class="validate">
+          <label for="firstName">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="lastName" type="text" class="validate">
+          <label for="lastName">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m12 l9">
+          <i class="mdi-communication-email prefix"></i>
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field col s12 m12 l3">
+          <i class="mdi-communication-call prefix"></i>
+          <input id="mobile" type="email" class="validate">
+          <label for="mobile">Mobile</label>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3">
+          <i class="mdi-social-cake prefix"></i>
+          <label for="birthdate">Birthdate</label>
+          <input id="birthdate" type="text" class="datepicker">
+        </div>
+        <div class="col s12 m12 l9">
+          <div class="file-field input-field">
+            <input placeholder="Profile Picture" id="image" class="file-path validate" type="text">
+            <div class="btn">
+              <span>File</span>
+              <input type="file">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      <div class="input-field col s12">
+      <i class="mdi-communication-location-on prefix"></i>
+      <textarea id="address" class="materialize-textarea"></textarea>
+      <label for="address">Current Address</label>
+      </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="mdi-action-account-child prefix"></i>
+          <input id="father" type="text" class="validate">
+          <label for="father">Father's Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="mother" type="text" class="validate">
+          <label for="mother">Mother's Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <select>
+            <option value="">Course</option>
+            <option value="btech">B.Tech.</option>
+            <option value="mtech">M.Tech.</option>
+            <option value="bsc">B.Sc.</option>
+            <option value="msc">M.Sc.</option>
+            <option value="phd">Ph.D.</option>
+          </select>
+          <label>Course</label>
+        </div>
+        <div class="input-field col s6">
+          <select>
+            <option value="">Branch</option>
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="cs">CS</option>
+          </select>
+          <label>Branch</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="mdi-maps-local-library prefix"></i>
+          <textarea id="higherEd" class="materialize-textarea"></textarea>
+          <label for="higherEd">Other Higher Degree(s) [One per line]</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+        <i class="mdi-communication-business prefix"></i>
+        <input id="company" type="text" class="validate">
+        <label for="company">Company</label>
+        </div>
+        <div class="input-field col s6">
+        <i class="mdi-action-perm-identity prefix"></i>
+        <input id="title" type="text" class="validate">
+        <label for="title">Title</label>
+        </div>
+      </div>
+      <div class="row">
+      <div class="input-field col s12 m4 l4">
+        <i class="mdi-action-favorite-outline prefix"></i>
+        <input id="married" type="checkbox">
+        <label for="married">Married</label>
+      </div>
+      <div class="input-field col s12 m8 l8">
+        <i class="mdi-action-event prefix"></i>
+        <input id="anniversary" type="text" class="datepicker">
+        <label for="anniversary">Anniversary</label>
+      </div>
+      </div>
+      <div class="row">
+      <div class="input-field col s12">
+      <i class="mdi-device-screen-lock-portrait prefix"></i>
+      <input id="password" type="password" class="validate">
+      <label for="password">Password</label>
+      </div>
+      </div> 
+    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="mdi-content-send"></i>
+  </button>
+    </form>
+  </div>
+</div>
+  <footer class="page-footer teal z-depth-1">
+    <div class="container">
+      <div class="row">
+        <div class="col s4">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">Footer Content.</p>
+        </div>
+        <div class="col s8">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; 2015 JK Institute Of Applied Physics and Technology.
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/jkAlumni.js"></script>
+</body>
+
+</html>
