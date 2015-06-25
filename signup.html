@@ -40,23 +40,23 @@
       <div class="row">
         <div class="input-field col s6">
           <i class="mdi-action-account-circle prefix"></i>
-          <input id="firstName" type="text" class="validate">
+          <input id="firstName" type="text" class="validate" required>
           <label for="firstName">First Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="lastName" type="text" class="validate">
+          <input id="lastName" type="text" class="validate" required>
           <label for="lastName">Last Name</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12 m12 l9">
           <i class="mdi-communication-email prefix"></i>
-          <input id="email" type="email" class="validate">
+          <input id="email" type="email" class="validate" required>
           <label for="email">Email</label>
         </div>
         <div class="input-field col s12 m12 l3">
           <i class="mdi-communication-call prefix"></i>
-          <input id="mobile" type="email" class="validate">
+          <input id="mobile" type="email" class="validate" required>
           <label for="mobile">Mobile</label>
       </div>
       </div>
@@ -64,7 +64,7 @@
         <div class="col s12 m12 l3">
           <i class="mdi-social-cake prefix"></i>
           <label for="birthdate">Birthdate</label>
-          <input id="birthdate" type="text" class="datepicker">
+          <input id="birthdate" type="text" class="datepicker" required>
         </div>
         <div class="col s12 m12 l9">
           <div class="file-field input-field">
@@ -80,7 +80,7 @@
       <div class="input-field col s12">
       <i class="mdi-communication-location-on prefix"></i>
       <textarea id="address" class="materialize-textarea"></textarea>
-      <label for="address">Current Address</label>
+      <label for="address" required>Current Address</label>
       </div>
       </div>
       <div class="row">
@@ -97,7 +97,7 @@
       <div class="row">
         <div class="input-field col s6">
           <select>
-            <option value="">Course</option>
+            <option value="" required>Course</option>
             <option value="btech">B.Tech.</option>
             <option value="mtech">M.Tech.</option>
             <option value="bsc">B.Sc.</option>
@@ -108,7 +108,7 @@
         </div>
         <div class="input-field col s6">
           <select>
-            <option value="">Branch</option>
+            <option value="" required>Branch</option>
             <option value="cse">CSE</option>
             <option value="ece">ECE</option>
             <option value="cs">CS</option>
@@ -138,7 +138,7 @@
       <div class="row">
       <div class="input-field col s12 m4 l4">
         <i class="mdi-action-favorite-outline prefix"></i>
-        <input id="married" type="checkbox">
+        <input id="married" type="checkbox" required>
         <label for="married">Married</label>
       </div>
       <div class="input-field col s12 m8 l8">
@@ -150,7 +150,7 @@
       <div class="row">
       <div class="input-field col s12">
       <i class="mdi-device-screen-lock-portrait prefix"></i>
-      <input id="password" type="password" class="validate">
+      <input id="password" type="password" class="validate" required>
       <label for="password">Password</label>
       </div>
       </div> 
