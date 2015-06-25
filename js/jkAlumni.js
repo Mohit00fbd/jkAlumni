@@ -11,6 +11,9 @@ $('.datepicker').pickadate({
     $('select').material_select();
   });
 
-$('#married').change(function(){ 
-    $('#anniversary').parent().css( 'visibility', this.checked ? 'visible' : 'hidden' );
+$('#married').click(function() {
+    $('#anniversary').attr('disabled',! this.checked)
+});
+$('#keep').click(function() {
+    $('#native-address').attr('disabled', this.checked)
 });

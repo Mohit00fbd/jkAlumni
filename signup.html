@@ -49,21 +49,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12 m12 l9">
-          <i class="mdi-communication-email prefix"></i>
-          <input id="email" type="email" class="validate" required>
-          <label for="email">Email</label>
-        </div>
-        <div class="input-field col s12 m12 l3">
-          <i class="mdi-communication-call prefix"></i>
-          <input id="mobile" type="email" class="validate" required>
-          <label for="mobile">Mobile</label>
-      </div>
-      </div>
-      <div class="row">
         <div class="col s12 m12 l3">
           <i class="mdi-social-cake prefix"></i>
-          <label for="birthdate">Birthdate</label>
+          <label for="birthdate" style="font-size:1em;">Birthdate</label>
           <input id="birthdate" type="text" class="datepicker" required>
         </div>
         <div class="col s12 m12 l9">
@@ -77,11 +65,44 @@
         </div>
       </div>
       <div class="row">
-      <div class="input-field col s12">
-      <i class="mdi-communication-location-on prefix"></i>
-      <textarea id="address" class="materialize-textarea"></textarea>
-      <label for="address" required>Current Address</label>
+        <div class="input-field col s12 m12 l6">
+          <i class="mdi-communication-email prefix"></i>
+          <input id="email" type="email" class="validate" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field col s12 m12 l3">
+          <i class="mdi-communication-call prefix"></i>
+          <input id="mobile" type="email" class="validate" required>
+          <label for="mobile">Mobile</label>
+        </div>
+        <div class="input-field col s12 m12 l3">
+          <div class="switch">
+            <label>
+            <strong>Show in Search Results</strong><br/>
+              Off
+              <input type="checkbox">
+              <span class="lever"></span>
+              On
+            </label>
+          </div>
+        </div>
       </div>
+      <div class="row">
+      <br/>
+      </div>
+      <div class="row">
+      <div class="input-field col s12 m6 l6">
+      <i class="mdi-communication-location-on prefix"></i>
+      <textarea id="current-address" class="materialize-textarea"></textarea>
+      <label for="current-address" required>Current Address</label>
+      </div>
+      <div class="input-field col s12 m6 l6">
+      <i class="mdi-action-home prefix"></i>
+      <textarea id="native-address" class="materialize-textarea"></textarea>
+      <label for="native-address" required>Native Address</label>
+      </div>
+      <input type="checkbox" id="keep" />
+      <label for="keep">Keep Current Address as Native Address</label>
       </div>
       <div class="row">
         <div class="input-field col s6">
@@ -96,24 +117,24 @@
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <select>
-            <option value="" required>Course</option>
+          <select id="course" required multiple class="browser-default">
+            <option value="" disabled selected>Course</option>
             <option value="btech">B.Tech.</option>
             <option value="mtech">M.Tech.</option>
             <option value="bsc">B.Sc.</option>
             <option value="msc">M.Sc.</option>
             <option value="phd">Ph.D.</option>
           </select>
-          <label>Course</label>
+          
         </div>
         <div class="input-field col s6">
-          <select>
-            <option value="" required>Branch</option>
+          <select required multiple class="browser-default"> 
+            <option value="" disabled selected>Branch</option>
             <option value="cse">CSE</option>
             <option value="ece">ECE</option>
             <option value="cs">CS</option>
           </select>
-          <label>Branch</label>
+          
         </div>
       </div>
       <div class="row">
@@ -148,7 +169,12 @@
       </div>
       </div>
       <div class="row">
-      <div class="input-field col s12">
+      <div class="input-field col s12 m6 l6">
+      <i class="mdi-action-account-circle prefix"></i>
+      <input id="username" type="text" class="validate" required>
+      <label for="username">Username</label>
+      </div>
+      <div class="input-field col s12 m6 l6">
       <i class="mdi-device-screen-lock-portrait prefix"></i>
       <input id="password" type="password" class="validate" required>
       <label for="password">Password</label>
@@ -188,6 +214,7 @@
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/jkAlumni.js"></script>
+  <script type="text/javascript" src="js/select2.min.js"></script>
 </body>
 
 </html>
