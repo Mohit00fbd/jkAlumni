@@ -10,4 +10,7 @@ $('.datepicker').pickadate({
  $(document).ready(function() {
     $('select').material_select();
   });
-         
+
+$('#married').change(function(){ 
+    $('#anniversary').parent().css( 'visibility', this.checked ? 'visible' : 'hidden' );
+});
