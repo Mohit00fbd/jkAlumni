@@ -36,7 +36,12 @@
     <header class="center-align">
     <i class="mdi-communication-quick-contacts-dialer large"></i>
     <h3>Sign Up</h3>
+    <hr/>
     </header>
+    <div class="row" style="text-align:center;font-size:2em;">
+      Personal Details
+    </div>  
+    </div>
       <div class="row">
         <div class="input-field col s6">
           <i class="mdi-action-account-circle prefix"></i>
@@ -64,6 +69,32 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="mdi-action-account-child prefix"></i>
+          <input id="father" type="text" class="validate">
+          <label for="father">Father's Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="mother" type="text" class="validate">
+          <label for="mother">Mother's Name</label>
+        </div>
+      </div>
+      <div class="row">
+      <div class="input-field col s12 m4 l4">
+        <i class="mdi-action-favorite-outline prefix"></i>
+        <input id="married" type="checkbox" required>
+        <label for="married">Married</label>
+      </div>
+      <div class="input-field col s12 m8 l8">
+        <i class="mdi-action-event prefix"></i>
+        <input id="anniversary" type="text" class="datepicker" disabled>
+        <label for="anniversary">Anniversary</label>
+      </div>
+      </div>
+      <div class="row" style="text-align:center;font-size:2em;">
+      Contact Details
+    </div>
       <div class="row">
         <div class="input-field col s12 m12 l6">
           <i class="mdi-communication-email prefix"></i>
@@ -104,22 +135,14 @@
       <input type="checkbox" id="keep" />
       <label for="keep">Keep Current Address as Native Address</label>
       </div>
-      <div class="row">
-        <div class="input-field col s6">
-          <i class="mdi-action-account-child prefix"></i>
-          <input id="father" type="text" class="validate">
-          <label for="father">Father's Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="mother" type="text" class="validate">
-          <label for="mother">Mother's Name</label>
-        </div>
-      </div>
+      <div class="row" style="text-align:center;font-size:2em;">
+      Academic Details
+    </div>
       <div class="row">
         <div class="input-field col s6">
           <select id="course" required multiple class="browser-default">
-            <option value="" disabled selected>Course</option>
-            <option value="btech">B.Tech.</option>
+            <option value=" " style="font-size:1.2em;" disabled>Course</option>
+            <option value="btech" selected>B.Tech.</option>
             <option value="mtech">M.Tech.</option>
             <option value="bsc">B.Sc.</option>
             <option value="msc">M.Sc.</option>
@@ -129,8 +152,8 @@
         </div>
         <div class="input-field col s6">
           <select required multiple class="browser-default"> 
-            <option value="" disabled selected>Branch</option>
-            <option value="cse">CSE</option>
+            <option value="" style="font-size:1.2em;" disabled>Branch</option>
+            <option value="cse" selected>CSE</option>
             <option value="ece">ECE</option>
             <option value="cs">CS</option>
           </select>
@@ -156,18 +179,9 @@
         <label for="title">Title</label>
         </div>
       </div>
-      <div class="row">
-      <div class="input-field col s12 m4 l4">
-        <i class="mdi-action-favorite-outline prefix"></i>
-        <input id="married" type="checkbox" required>
-        <label for="married">Married</label>
-      </div>
-      <div class="input-field col s12 m8 l8">
-        <i class="mdi-action-event prefix"></i>
-        <input id="anniversary" type="text" class="datepicker" disabled>
-        <label for="anniversary">Anniversary</label>
-      </div>
-      </div>
+      <div class="row" style="text-align:center;font-size:2em;">
+      Login Credentials
+    </div>
       <div class="row">
       <div class="input-field col s12 m6 l6">
       <i class="mdi-action-account-circle prefix"></i>
