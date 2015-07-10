@@ -130,8 +130,8 @@
       <div class="row">
         <div class="input-field col s6">
           <select id="course" required multiple class="browser-default">
-            <option value=" " style="font-size:1.2em;" disabled>Degree</option>
-            <option value="btech" selected>B.Tech.</option>
+            <option value=" " style="font-size:1.2em;" disabled selected>Degree</option>
+            <option value="btech">B.Tech.</option>
             <option value="mtech">M.Tech.</option>
             <option value="bsc">B.Sc.</option>
             <option value="msc">M.Sc.</option>
@@ -141,8 +141,8 @@
         </div>
         <div class="input-field col s6">
           <select required multiple class="browser-default"> 
-            <option value="" style="font-size:1.2em;" disabled>Branch</option>
-            <option value="cse" selected>CSE</option>
+            <option value="" style="font-size:1.2em;" disabled selected>Branch</option>
+            <option value="cse">CSE</option>
             <option value="ece">ECE</option>
             <option value="cs">CS</option>
           </select>
@@ -162,9 +162,15 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <i class="mdi-maps-local-library prefix"></i>
-          <textarea id="higherEd" class="materialize-textarea"></textarea>
-          <label for="higherEd">Other Higher Degree(s) [One per line]</label>
+          <select id="higherEd" multiple class="browser-default">
+            <option value="" disabled selected>Other Higher Degree(s)</option>
+            <option value="mtech">M.Tech.</option>
+            <option value="ms">M.S.</option>
+            <option value="mba">MBA</option>
+            <option value="msc">M.Sc.</option>
+            <option value="phd">Ph.D.</option>
+            <option value="ds">D.S.</option>
+          </select>
         </div>
       </div>
       <div class="row">
